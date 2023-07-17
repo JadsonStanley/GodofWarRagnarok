@@ -1,0 +1,122 @@
+body{
+    background: rgb(0, 0, 0);
+}
+
+*{
+    color: aliceblue;
+    font-family: 'Cinzel', serif;
+   
+}
+
+#menu{
+  background-color: rgb(0, 0, 0);
+}
+
+#menu ul{
+  max-width: 800px;
+  margin: auto;
+}
+
+#menu ul li{
+  display: inline;
+  padding: 20px;
+} 
+
+#menu ul li a{
+    padding: 20px;
+    display:inline-block;
+    text-decoration: none;
+    transition: background .3s;
+}
+
+#menu ul li a:hover{
+  background-color: rgb(4, 98, 187);
+  
+}
+
+#menu ul li:last-child a{
+  float: right;
+}
+
+hr{
+  padding: 10px;
+  background-color: rgb(4, 98, 187);
+  margin: auto;
+  border-style: none;
+}
+
+.img1{
+  image-rendering:optimizeQuality;
+}
+
+.logo{
+  position: absolute;
+  float: left;
+  margin: 0 auto;
+  top: 0;
+  
+}
+
+h1{
+   text-align: center;
+
+}
+
+.hpng{
+  float: right;
+}
+
+figure:hover{
+   cursor: pointer;
+   
+}
+
+@media (max-width:500px) {
+  .img1{
+    width: 100%;
+  }
+
+  #menu ul li{
+    padding: 10px;
+  }
+  #menu ul{
+    padding: 30px;
+  }
+
+  #menu ul li:last-child a{
+    float:none;
+  }
+}
+
+figure.imgtexto {
+  position: relative;
+  border: 3px solid rgba(255, 255, 255, 0.418) ;
+  width: 25%;
+
+}
+
+figure.imgtexto img{
+  width: 100%;
+  height: 100%;
+}
+
+figure.imgtexto figcaption{
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.603);
+  width: 100%;
+  height: 100%;
+  ;
+  box-sizing: border-box;
+  transition: opacity 1s;
+  text-align: center;
+}
+
+figure.imgtexto:hover figcaption{
+  opacity: 1;
+}
+
+figure{
+  display: inline-block;
+}
