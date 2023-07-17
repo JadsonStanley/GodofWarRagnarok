@@ -120,3 +120,17 @@ figure.imgtexto:hover figcaption{
 figure{
   display: inline-block;
 }
+
+.hb{
+  background-image: url(https://img.freepik.com/fotos-premium/fundo-de-textura-de-papel-retro-vintage-velho-grunge_47840-948.jpg);
+}
+
+#historia{
+  margin: 0;
+  color: black;
+}
+
+.th{
+  color: black;
+}
+
