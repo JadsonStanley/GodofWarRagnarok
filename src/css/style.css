@@ -30,7 +30,7 @@ body{
 }
 
 #menu ul li a:hover{
-  background-color: rgb(4, 98, 187);
+  background-color: rgb(1, 57, 109);
   
 }
 
@@ -72,7 +72,7 @@ figure:hover{
 }
 
 @media (max-width:500px) {
-  .img1{
+  .trailer{
     width: 100%;
   }
 
@@ -154,4 +154,18 @@ figure{
   }
 }
 
+.soundtrack{
+  float: right;
+  padding-right:20px;
+}
 
+.album{
+  float:right;
+  padding-right: 120px;
+  position: absolute;
+  margin: 0;
+}
+
+.albumtext{
+  padding-left: 30px;
+}
