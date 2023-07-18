@@ -76,12 +76,8 @@ figure:hover{
     width: 100%;
   }
 
-  #menu ul li{
-    padding: 1px;
-    top: 50px;
-  }
-  #menu ul{
-    padding: 50px;
+ #menu ul{
+  padding: 0;
   }
 
   #menu ul li:last-child a{
@@ -135,3 +131,27 @@ figure{
 .th{
   color: black;
 }
+
+@media (max-width:900px) {
+  
+  #menu ul li{
+    padding-left: 10px;
+  }
+  
+  .logo{
+    float: right;
+    position: relative;
+    width: 20%;
+  }
+
+  figure.imgtexto figcaption{
+    padding-top: 0%;
+    font-size: small;
+  }
+
+  #menu ul li:last-child a{
+    float:none;
+  }
+}
+
+
