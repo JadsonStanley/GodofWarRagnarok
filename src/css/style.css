@@ -126,8 +126,7 @@ figure{
 #historia{
   margin: 0;
   color: black;
-}
-
+  }
 .th{
   color: black;
 }
@@ -155,17 +154,27 @@ figure{
 }
 
 .soundtrack{
-  float: right;
-  padding-right:20px;
+  padding-top: 30px;
+  padding-left: 330px;
 }
 
-.album{
-  float:right;
-  padding-right: 120px;
+.maistext{
+  text-align: center;
+}
+
+.dt{
+  padding-top: 30px;
+  padding-left: 330px;
+}
+
+.ct{
+  text-align: center;
+}
+
+.ci{
   position: absolute;
-  margin: 0;
 }
 
-.albumtext{
-  padding-left: 30px;
+.ci2{
+  position: absolute;
 }
