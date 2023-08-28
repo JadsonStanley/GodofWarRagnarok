@@ -1,0 +1,263 @@
+
+
+body{
+    background: rgb(0, 0, 0);
+}
+
+*{
+    color: aliceblue;
+    font-family: 'Cinzel', serif;
+   
+}
+
+#menu{
+  background-color: rgb(0, 0, 0);
+}
+
+#menu ul{
+  max-width: 1000px;
+  margin: auto;
+  margin-left: 150px;
+}
+
+#menu ul li{
+  display: inline;
+  padding: 20px;
+} 
+
+#menu ul li a{
+    padding: 20px;
+    display:inline-block;
+    text-decoration: none;
+    transition: background .3s;
+}
+
+#menu ul li a:hover{
+  background-color: rgb(1, 57, 109);
+  
+}
+
+#menu ul li:last-child a{
+  float: right;
+  display: block;
+}
+
+hr{
+  padding: 10px;
+  background-color: rgb(1, 57, 109);
+  margin: auto;
+  border-style: none;
+}
+
+.logo{
+  position: absolute;
+  float: left;
+  margin: 0 auto;
+  top: 0;
+}
+
+h1{
+   text-align: center;
+}
+
+.hpng{
+  float: right;
+}
+
+figure:hover{
+  cursor: pointer;
+}
+
+@media (max-width:500px) {
+  .trailer{
+    width: 100%;
+  }
+
+  @media (min-width:1000px){
+  .trailer{
+    width: 100%;
+    height: 500px;
+    }
+  }
+
+ #menu ul{
+  padding: 0;
+  }
+
+  #menu ul li:last-child a{
+    float:none;
+  }
+}
+
+figure.imgtexto {
+  position: relative;
+  border: 3px solid rgba(255, 255, 255, 0.418) ;
+  width: 25%;
+
+}
+
+figure.imgtexto img{
+  width: 100%;
+  height: 100%;
+}
+
+
+figure.imgtexto figcaption{
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.63);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: opacity 1s;
+  text-align: center;
+}
+
+figure.imgtexto:hover figcaption{
+  opacity: 1;
+}
+
+figure{
+  display: inline-block;
+}
+
+.hb{
+  background-image: url(https://img.freepik.com/fotos-premium/fundo-de-textura-de-papel-retro-vintage-velho-grunge_47840-948.jpg);
+}
+
+#historia{
+  margin: 0;
+  color: black;
+  }
+.th{
+  color: black;
+}
+
+@media (max-width:900px) {
+  
+  #menu ul li{
+    padding-left: 10px;
+  }
+  
+  .logo{
+    float: right;
+    position: relative;
+    width: 20%;
+  }
+
+  figure.imgtexto figcaption{
+    padding-top: 0%;
+    font-size: small;
+  }
+
+  #menu ul li:last-child a{
+    float:none;
+  }
+}
+
+.soundtrack{
+  padding-top: 30px;
+  padding-left: 330px;
+}
+
+.maistext{
+  text-align: center;
+}
+
+.dt{
+  padding-top: 30px;
+  padding-left: 330px;
+}
+
+.ctitulo{
+  
+  color: rgb(1, 57, 109);
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.774);
+  text-transform: uppercase;
+  position: relative;
+  left: 45%;
+}
+
+.ci{
+ position: relative;
+ left: 135%;
+ top: 100px;
+}
+
+.ctxt{
+  position: relative;
+  bottom: 200px;
+}
+
+.comprarjogo{
+ 
+  float: right;
+  left: 9%;
+  top: 500px;
+  padding: 20px 30px 20px 30px;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  background-color: rgb(29, 27, 160);
+  border-style: none;
+  border-radius: 30px;
+  position: relative;
+}
+
+.comprarjogo:hover{
+  background-color: #0dd;
+		box-shadow: inset 0 0 0 rgba(0,170,170,0.5), 0 0 1.5em rgba(0,170,170,0.7);
+    transition: 1s;
+	}
+
+
+.linkcj{
+  text-decoration: none;
+}
+
+.linkcj:hover{
+  color: black;
+}
+
+footer{
+  background-color: rgb(1, 57, 109);
+}
+
+figure.imgtexto:hover {
+  border: 3px solid rgb(1, 57, 109) ;
+  transition: 1s;
+  width: 25%;
+}
+
+footer ul{
+ margin: 0;
+ margin-left: 28%;
+}
+
+footer ul li {
+  display: inline-flex;
+  margin: 0px 10px 0px 10px; 
+  
+}
+
+footer ul li a {
+  text-decoration: none;
+ 
+}
+
+footer ul li a:hover {
+  color: aqua;
+}
+
+.footertext{
+  margin-left: 8%;
+}
+
+#comprar{
+ position: relative;
+}
+
+.sobrepor{
+  position: absolute;
+  top: 0;
+}
