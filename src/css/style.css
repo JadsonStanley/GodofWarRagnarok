@@ -12,6 +12,7 @@ body{
 
 .menuresp:focus ~ #menu ul{
   height: 420px;
+  transition: 0.5s;
 }
   @media (max-width:700px) {
     .trailer{
@@ -323,4 +324,5 @@ footer ul li a:hover {
   background-color: transparent;
   border-style: none;
   position:absolute;
+  width: 50px;
 }
