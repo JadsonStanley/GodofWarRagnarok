@@ -1,19 +1,17 @@
-
-
-body{
-    background: rgb(0, 0, 0);
-    margin: 0;
+body {
+  background: rgb(0, 0, 0);
+  margin: 0;
 }
 
-*{
-    color: aliceblue;
-    font-family: 'Cinzel', serif;
+* {
+  color: aliceblue;
+  font-family: 'Cinzel', serif;
 }
 
-.menuresp{
+.menuresp {
   background-color: transparent;
   border-style: none;
-  position:relative;
+  position: relative;
   width: 50px;
   color: rgb(5, 30, 255);
   font-size: 25px;
@@ -21,130 +19,145 @@ body{
 }
 
 
-.menuresp:enabled ~ #menu ul{
+.menuresp:enabled~#menu ul {
   transition: 0.5s;
 }
-.menuresp:focus ~ #menu ul {
+
+.menuresp:focus~#menu ul {
   z-index: 1;
 }
 
-  @media (max-width:700px) {
-    
-    .trailer{
+@media (max-width:700px) {
+
+  .trailer {
     width: 100%;
-    }
-    
-    header {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-    
-    #menu ul {
-      flex-direction: column;
-      margin: 0;
-      padding: 0;
-      z-index: -1;
-      position: absolute;
-      top:-2px;
-      
-    }
-    
-    .ctitulo{
-      font-size: small;
-      position:relative;
-      text-align: center;
-
-    }
-    .ctxt{
-      font-size:xx-small;
-      bottom: 150px;
-    }
-
-    .ci {
-      width: 130px;
-      left: 110px;
-    }
-
-    .comprarjogo {
-      font-size: small;
-      top: 20px;
-      left: 120px;
-    }
-
-    figure.imgtexto {
-      display:flex;
-      width: 80%;
-    }
   }
 
-  @media (min-width:900px){
-    .trailer{
-      width: 100%;
-      height: 500px;
-      }
-      .ci {
-      left: 550px;
-      top: 50px;
-      }
-      .ctxt {
-       bottom: 250px;
-       left: 20px;
-      }
-      .ctitulo {
-       left: 180px;
-      }
-      .comprarjogo{
-        top: 100px;
-        left: 430px;
-      }
-      .menuresp {
-       display: none;
-      }
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
-    #menu ul li:last-child a{
-      float:none;
-      display: none;
-   }
-   figure.imgtexto {
-    display:inline-block;
+  #menu ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    position: absolute;
+    top: -2px;
+
+  }
+
+  .ctitulo {
+    font-size: small;
+    position: relative;
+    text-align: center;
+
+  }
+
+  .ctxt {
+    font-size: xx-small;
+    bottom: 150px;
+  }
+
+  .ci {
+    width: 130px;
+    left: 110px;
+  }
+
+  .comprarjogo {
+    font-size: small;
+    top: 20px;
+    left: 120px;
+  }
+
+  figure.imgtexto {
+    display: flex;
+    width: 80%;
+  }
+}
+
+@media (min-width:900px) {
+  .trailer {
+    width: 100%;
+    height: 500px;
+  }
+
+  .ci {
+    left: 550px;
+    top: 50px;
+  }
+
+  .ctxt {
+    bottom: 250px;
+    left: 20px;
+  }
+
+  .ctitulo {
+    left: 180px;
+  }
+
+  .comprarjogo {
+    top: 100px;
+    left: 430px;
+  }
+
+  .menuresp {
+    display: none;
+  }
+
+  #menu ul li:last-child a {
+    float: none;
+    display: none;
+  }
+
+  figure.imgtexto {
+    display: inline-block;
     width: 25%;
   }
-   #menu{
+
+  #menu {
     position: fixed;
     z-index: 1;
-   }
   }
-    @media (min-width:1280px){
-      .trailer{
-        width: 100%;
-        height: 500px;
-        }
-        .ci {
-        left: 800px;
-        top: 50px;
-        }
-        .ctxt {
-         bottom: 250px;
-         left: 20px;
-        }
-        .ctitulo {
-         left: 300px;
-        }
-        .comprarjogo{
-          top: 250px;
-          left: 550px;
-        }
-        figure.imgtexto {
-          display:inline-block;
-          width: 25%;
-        }
-      }
+}
 
-#menu{
+@media (min-width:1280px) {
+  .trailer {
+    width: 100%;
+    height: 500px;
+  }
+
+  .ci {
+    left: 800px;
+    top: 50px;
+  }
+
+  .ctxt {
+    bottom: 250px;
+    left: 20px;
+  }
+
+  .ctitulo {
+    left: 300px;
+  }
+
+  .comprarjogo {
+    top: 250px;
+    left: 550px;
+  }
+
+  figure.imgtexto {
+    display: inline-block;
+    width: 25%;
+  }
+}
+
+#menu {
   width: 100%;
 }
 
-#menu ul{ 
+#menu ul {
   margin: 0;
   display: flex;
   background-color: rgba(0, 0, 0, 0.836);
@@ -152,58 +165,56 @@ body{
   align-items: center;
 }
 
-#menu ul li{
+#menu ul li {
   display: inline;
-} 
+}
 
-.logo{
+.logo {
   width: 150px;
   height: 50px;
 }
 
-#menu ul li a{
-    margin-left: 20px;
-    padding: 20px;
-    display:inline-block;
-    text-decoration: none;
-    transition: background .3s;
+#menu ul li a {
+  margin-left: 20px;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background .3s;
+  border-radius: 10px;
 }
 
-#menu ul li a:hover{
+#menu ul li a:hover {
   background-color: rgb(1, 57, 109);
 }
 
-hr{
-  padding: 10px;
-  background-color: rgb(1, 57, 109);
-  margin: auto;
-  border-style: none;
+h1 {
+  text-align: center;
 }
 
-h1{
-   text-align: center;
-}
-
-.hpng{
+.hpng {
   float: right;
 }
 
-figure:hover{
+.centro {
+  margin: 0 auto;
+}
+
+figure:hover {
   cursor: pointer;
 }
 
 figure.imgtexto {
   position: relative;
-  border: 3px solid rgba(255, 255, 255, 0.418) ;
+  border: 3px solid rgba(255, 255, 255, 0.418);
 }
 
-figure.imgtexto img{
+figure.imgtexto img {
   width: 100%;
   height: 100%;
 }
 
 
-figure.imgtexto figcaption{
+figure.imgtexto figcaption {
   opacity: 0;
   position: absolute;
   top: 0px;
@@ -215,56 +226,56 @@ figure.imgtexto figcaption{
   text-align: center;
 }
 
-figure.imgtexto:hover figcaption{
+figure.imgtexto:hover figcaption {
   opacity: 1;
 }
 
-.hb{
+.hb {
   background-image: url(https://img.freepik.com/fotos-premium/fundo-de-textura-de-papel-retro-vintage-velho-grunge_47840-948.jpg);
 }
 
-#historia{
-  margin: 0;
+#historia {
+  margin: 0 auto;
   color: black;
-  }
+}
 
-.th{
+.th {
   color: black;
   margin-top: 0;
   margin-left: 20px;
   margin-bottom: 0;
 }
 
-.soundtrack{
+.soundtrack {
   padding-top: 30px;
   width: 100%;
 }
 
-.maistext{
+.maistext {
   text-align: center;
 }
 
-.dt{
+.dt {
   width: 100%;
 }
 
-.ctitulo{
+.ctitulo {
   color: rgb(1, 57, 109);
   text-shadow: 1px 1px rgba(255, 255, 255, 0.774);
   text-transform: uppercase;
   position: relative;
 }
 
-.ci{
- position: relative;
-}
-
-.ctxt{
+.ci {
   position: relative;
 }
 
-.comprarjogo{
- 
+.ctxt {
+  position: relative;
+}
+
+.comprarjogo {
+
   padding: 20px 30px 20px 30px;
   color: rgb(255, 255, 255);
   background-color: rgb(29, 27, 160);
@@ -273,63 +284,63 @@ figure.imgtexto:hover figcaption{
   position: relative;
 }
 
-.comprarjogo:hover{
+.comprarjogo:hover {
   background-color: #0dd;
-		box-shadow: inset 0 0 0 rgba(0,170,170,0.5), 0 0 1.5em rgba(0,170,170,0.7);
-    transition: 1s;
-	}
+  box-shadow: inset 0 0 0 rgba(0, 170, 170, 0.5), 0 0 1.5em rgba(0, 170, 170, 0.7);
+  transition: 1s;
+}
 
 
-.linkcj{
+.linkcj {
   text-decoration: none;
 }
 
-.linkcj:hover{
+.linkcj:hover {
   color: black;
 }
 
-footer{
+footer {
   background-color: rgb(1, 57, 109);
 }
 
 figure.imgtexto:hover {
-  border: 3px solid rgb(1, 57, 109) ;
+  border: 3px solid rgb(1, 57, 109);
   transition: 1s;
 }
 
-footer ul{
- margin: 0;
- margin-left: 28%;
+footer ul {
+  margin: 0;
+  margin-left: 28%;
 }
 
 footer ul li {
   display: inline-flex;
-  margin: 0px 10px 0px 10px; 
-  
+  margin: 0px 10px 0px 10px;
+
 }
 
 footer ul li a {
   text-decoration: none;
- 
+
 }
 
 footer ul li a:hover {
   color: aqua;
 }
 
-.footertext{
+.footertext {
   text-align: center;
 }
 
-#comprar{
- position: relative;
+#comprar {
+  position: relative;
 }
 
-.sobrepor{
+.sobrepor {
   position: absolute;
   top: 0;
 }
 
-.godyt{
+.godyt {
   margin-top: 30px;
 }
