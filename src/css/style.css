@@ -1,37 +1,12 @@
-body {
-  background: rgb(0, 0, 0);
-  margin: 0;
-}
-
-* {
-  color: aliceblue;
-  font-family: 'Cinzel', serif;
-}
-
-.menuresp {
-  background-color: transparent;
-  border-style: none;
-  position: relative;
-  width: 50px;
-  color: rgb(5, 30, 255);
-  font-size: 25px;
-  top: 4px;
-}
-
-
-.menuresp:enabled~#menu ul {
-  transition: 0.5s;
-}
-
-.menuresp:focus~#menu ul {
-  z-index: 1;
-}
-
 @media (max-width:700px) {
 
   .trailer {
     width: 100%;
   }
+
+  .godyt {
+  margin-top: 60px;
+}
 
   header {
     display: flex;
@@ -45,14 +20,6 @@ body {
     z-index: -1;
     position: absolute;
     top: -2px;
-
-  }
-
-  .ctitulo {
-    font-size: small;
-    position: relative;
-    text-align: center;
-
   }
 
   .ctxt {
@@ -93,10 +60,6 @@ body {
     left: 20px;
   }
 
-  .ctitulo {
-    left: 180px;
-  }
-
   .comprarjogo {
     top: 100px;
     left: 430px;
@@ -113,7 +76,7 @@ body {
 
   figure.imgtexto {
     display: inline-block;
-    width: 25%;
+    width: 50%;
   }
 
   #menu {
@@ -122,35 +85,40 @@ body {
   }
 }
 
-@media (min-width:1280px) {
-  .trailer {
-    width: 100%;
-    height: 500px;
-  }
+body {
+  background: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
 
-  .ci {
-    left: 800px;
-    top: 50px;
-  }
+* {
+  color: aliceblue;
+  font-family: 'Cinzel', serif;
+}
 
-  .ctxt {
-    bottom: 250px;
-    left: 20px;
-  }
+h1 {
+  text-align: center;
+}
 
-  .ctitulo {
-    left: 300px;
-  }
+/*MENU*/
 
-  .comprarjogo {
-    top: 250px;
-    left: 550px;
-  }
+.logo {
+  width: 150px;
+  height: 50px;
+}
 
-  figure.imgtexto {
-    display: inline-block;
-    width: 25%;
-  }
+.menuresp {
+  background-color: transparent;
+  border-style: none;
+  position: relative;
+  width: 50px;
+  color: rgb(5, 30, 255);
+  font-size: 25px;
+  top: 4px;
+}
+
+.menuresp:focus~#menu ul {
+  z-index: 1;
 }
 
 #menu {
@@ -163,15 +131,12 @@ body {
   background-color: rgba(0, 0, 0, 0.836);
   overflow: hidden;
   align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 #menu ul li {
   display: inline;
-}
-
-.logo {
-  width: 150px;
-  height: 50px;
 }
 
 #menu ul li a {
@@ -179,40 +144,40 @@ body {
   padding: 20px;
   display: inline-block;
   text-decoration: none;
-  transition: background .3s;
-  border-radius: 10px;
 }
 
 #menu ul li a:hover {
-  background-color: rgb(1, 57, 109);
+  color: rgb(79, 149, 214);
 }
 
-h1 {
-  text-align: center;
+/*HISTORIA*/
+.txth {
+  color: rgb(247, 245, 245);
+  margin-top: 0;
+  margin-left: 20px;
+  margin-bottom: 0;
 }
 
 .hpng {
   float: right;
 }
 
-.centro {
-  margin: 0 auto;
-}
+/*PERSONAGENS*/
 
 figure:hover {
   cursor: pointer;
 }
 
 figure.imgtexto {
+  display: inline-block;
+  width: 25%;
   position: relative;
   border: 3px solid rgba(255, 255, 255, 0.418);
 }
 
 figure.imgtexto img {
   width: 100%;
-  height: 100%;
 }
-
 
 figure.imgtexto figcaption {
   opacity: 0;
@@ -230,20 +195,15 @@ figure.imgtexto:hover figcaption {
   opacity: 1;
 }
 
-.hb {
-  background-image: url(https://img.freepik.com/fotos-premium/fundo-de-textura-de-papel-retro-vintage-velho-grunge_47840-948.jpg);
+figure.imgtexto:hover {
+  border: 3px solid rgb(1, 57, 109);
+  transition: 1s;
 }
 
-#historia {
-  margin: 0 auto;
-  color: black;
-}
+/*MAIS*/
 
-.th {
-  color: black;
-  margin-top: 0;
-  margin-left: 20px;
-  margin-bottom: 0;
+.maistext {
+  text-align: center;
 }
 
 .soundtrack {
@@ -251,61 +211,84 @@ figure.imgtexto:hover figcaption {
   width: 100%;
 }
 
-.maistext {
-  text-align: center;
-}
-
-.dt {
+.dicasetruquesyt {
   width: 100%;
 }
 
-.ctitulo {
-  color: rgb(1, 57, 109);
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.774);
-  text-transform: uppercase;
+/*COMPRAR*/
+
+.organizarcomprar {
+  display: flex;
+  width: 100%;
+}
+
+#kratosvideo {
   position: relative;
 }
 
-.ci {
-  position: relative;
+.sobrepor {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
 }
 
-.ctxt {
+.spacebetween {
   position: relative;
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+ top: 100px;
+ margin: 0px 20px 0px 20px;
 }
 
-.comprarjogo {
+.preços {
+  width: 30%;
+}
 
+.produtos {
+  width: 300px;
+  height: 300px;
+}
+
+.botaoposiçao{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 250px;
+}
+
+.botaocomprar {
   padding: 20px 30px 20px 30px;
   color: rgb(255, 255, 255);
   background-color: rgb(29, 27, 160);
   border-style: none;
   border-radius: 30px;
-  position: relative;
+  top: 60px;
 }
 
-.comprarjogo:hover {
+.botaocomprar:hover {
   background-color: #0dd;
   box-shadow: inset 0 0 0 rgba(0, 170, 170, 0.5), 0 0 1.5em rgba(0, 170, 170, 0.7);
   transition: 1s;
 }
 
-
-.linkcj {
+.linkbotaocomprar {
   text-decoration: none;
 }
 
-.linkcj:hover {
+.linkbotaocomprar:hover {
   color: black;
 }
+
+/*FOOTER*/
 
 footer {
   background-color: rgb(1, 57, 109);
 }
 
-figure.imgtexto:hover {
-  border: 3px solid rgb(1, 57, 109);
-  transition: 1s;
+.footertext {
+  text-align: center;
 }
 
 footer ul {
@@ -328,19 +311,3 @@ footer ul li a:hover {
   color: aqua;
 }
 
-.footertext {
-  text-align: center;
-}
-
-#comprar {
-  position: relative;
-}
-
-.sobrepor {
-  position: absolute;
-  top: 0;
-}
-
-.godyt {
-  margin-top: 30px;
-}
