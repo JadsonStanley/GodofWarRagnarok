@@ -45,6 +45,10 @@
     width: 150px;
     height:150px;
   }
+
+  .txtcompreojogo{
+    margin-bottom: 30px;
+  }
 }
 
 /*TELAS MAIORES*/
@@ -78,6 +82,10 @@
   .produtos{
     width: 300px;
     height: 300px;
+  }
+
+  .txtcompreojogo{
+    margin-bottom: 150px;
   }
 }
 
