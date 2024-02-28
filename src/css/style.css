@@ -27,11 +27,11 @@
     cursor: pointer;
   }
 
-  .menu-list{
+  .menu-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display:none;
+    display: none;
   }
 
   #menu ul {
@@ -95,48 +95,85 @@
 /*Desktops/Laptops*/
 
 @media (min-width:1000px) {
-   figure.imgtexto{
-    width: 30%;
-   }
+  figure.imgtexto {
+    width: 25%;
+  }
 
-   #menu{
-     position: fixed;
-     z-index: 1;
-   }
+  #menu {
+    position: fixed;
+    z-index: 1;
+  }
 
-   .personagens{
+  .personagens {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-   }
+  }
 }
 
 @media (min-width: 1420px) {
-  #personagens{
-    margin-top:70px;
+  #personagens {
+    margin-top: 70px;
+  }
+}
+
+
+@media (min-width: 1520px) {
+
+  .hb {
+    margin-bottom: 200px;
+  }
+
+  .botaoposiçao {
+    top: 220px;
+  }
+
+}
+
+@media (min-width: 1630px) {
+  .hb {
+    margin-bottom: 300px
+  }
+
+  .botaoposiçao{
+    top: 300px
+  }
+}
+
+@media (min-width: 1761px) {
+  .hb {
+    margin-bottom: 400px;
+  }
+
+  .botaoposiçao{
+    top: 350px;
   }
 }
 
 @media (min-width: 1920px) {
-  
+
   #menu ul {
-   font-size: 16pt;
+    font-size: 16pt;
   }
 
-  .godyt{
+  .godyt {
     position: relative;
     top: 50px;
   }
-  
-  .txth{
+
+  .txth {
     font-size: 17pt;
   }
 
-  figure.imgtexto{
+  .hb{
+    margin-bottom: 0px;
+  }
+
+  figure.imgtexto {
     width: 25%;
   }
 
-  .botaoposiçao{
+  .botaoposiçao {
     top: 200px;
   }
 
@@ -146,16 +183,15 @@
     font-size: 20pt;
   }
 
-  .spacebetween{
-    top:80px;
+  .spacebetween {
+    top: 80px;
     font-size: 15pt;
   }
 
-  .produtos{
+  .produtos {
     width: 500px;
     height: 500px;
   }
-
 }
 
 /**/
