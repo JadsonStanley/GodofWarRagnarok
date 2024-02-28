@@ -135,7 +135,7 @@
     margin-bottom: 300px
   }
 
-  .botaoposiçao{
+  .botaoposiçao {
     top: 300px
   }
 }
@@ -145,7 +145,7 @@
     margin-bottom: 400px;
   }
 
-  .botaoposiçao{
+  .botaoposiçao {
     top: 350px;
   }
 }
@@ -161,11 +161,16 @@
     top: 50px;
   }
 
+  #historia {
+    position: relative;
+    top: 50px;
+  }
+
   .txth {
     font-size: 17pt;
   }
 
-  .hb{
+  .hb {
     margin-bottom: 0px;
   }
 
