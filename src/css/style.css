@@ -20,7 +20,7 @@
     right: 0;
     width: 100vw;
     height: 50vh;
-    background:rgb(20, 20, 20);
+    background:rgb(14, 14, 14);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -55,6 +55,16 @@
       opacity: 1;
       transform: translateX(0);
     }
+  }
+
+  .mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  .mobile-menu.active .line2{
+    opacity: 0;
+  }
+  .mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
   }
 
   .logo {
@@ -229,7 +239,7 @@
 }
 
 body {
-  background: rgb(0, 0, 0);
+  background: rgb(10, 10, 10);
   margin: 0;
   padding: 0;
 }
@@ -253,7 +263,7 @@ img {
 /*MENU*/
 
 header{
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(14, 14, 14);
 }
 
 .logo{
@@ -266,7 +276,7 @@ nav {
   height: 8vh;
   position: fixed;
   width: 100%;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(14, 14, 14);
   z-index: 1;
 }
 
@@ -290,6 +300,7 @@ nav {
   height: 2px;
   background-color: rgb(0, 81, 255);
   margin: 8px;
+  transition: 0.3s;
 }
 
 
