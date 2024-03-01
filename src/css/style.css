@@ -1,41 +1,64 @@
+
 /*CELULAR*/
 
 @media (max-width:799px) {
-
-  .trailer {
-    width: 100%;
+  
+  body{
+    overflow-x: hidden;
   }
 
-  .godyt {
-    margin-top: 10px;
+  .space{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
   }
 
-  .menu {
-    display: flex;
-    justify-content: space-between;
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 100vw;
+    height: 50vh;
+    background:rgb(20, 20, 20);
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    transform:translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  
+  .mobile-menu{
+    display: block;
+  }
+
+  .nav-list {
+    padding: 0;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  
+  .nav-list.active{
+    transform:translateX(0);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   .logo {
     height: 100px;
-    display: none;
-  }
-
-  .menu-icon {
-    color: rgb(72, 117, 202);
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  .menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-  }
-
-  #menu ul {
-    flex-direction: column;
   }
 
   .comprarjogo {
@@ -63,20 +86,28 @@
   .txtcompreojogo {
     margin-bottom: 30px;
   }
+  
 }
 
 /*TABLETS*/
 
 @media (min-width:800px) {
-
-  .menuresp {
+  
+  .mobile-menu{
     display: none;
   }
 
-  #menu ul li:last-child a {
-    display: none;
+  nav{
+    justify-content: center;
   }
 
+  .button button{
+    border: none;
+    background-color: rgb(0, 110, 255);
+    padding: 6px 15px;
+    border-radius: 5px;
+  }
+  
   figure.imgtexto {
     display: inline-block;
     width: 39%;
@@ -95,13 +126,9 @@
 /*Desktops/Laptops*/
 
 @media (min-width:1000px) {
+  
   figure.imgtexto {
     width: 25%;
-  }
-
-  #menu {
-    position: fixed;
-    z-index: 1;
   }
 
   .personagens {
@@ -152,10 +179,6 @@
 
 @media (min-width: 1920px) {
 
-  #menu ul {
-    font-size: 16pt;
-  }
-
   .godyt {
     position: relative;
     top: 50px;
@@ -200,6 +223,10 @@
 }
 
 /**/
+* {
+  color: aliceblue;
+  font-family: 'Cinzel', serif;
+}
 
 body {
   background: rgb(0, 0, 0);
@@ -207,9 +234,12 @@ body {
   padding: 0;
 }
 
-* {
-  color: aliceblue;
-  font-family: 'Cinzel', serif;
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
 }
 
 h1 {
@@ -222,41 +252,55 @@ img {
 
 /*MENU*/
 
-.logo {
-  width: 120px;
+header{
+  background-color: rgb(20, 20, 20);
 }
 
-#menu {
-  width: 100%;
+.logo{
+  width: 150px;
 }
 
-#menu ul {
-  margin: 0;
+nav {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.836);
   align-items: center;
-  justify-content: center;
-  padding: 0;
+  height: 8vh;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  z-index: 1;
 }
 
-#menu ul li {
-  display: inline;
+.nav-list{
+   list-style: none;
+   display: flex;
 }
 
-#menu ul li a {
-  margin-left: 20px;
-  padding: 20px;
-  display: inline-block;
-  text-decoration: none;
+.nav-list li{
+   letter-spacing: 3px;
+   margin-left: 32px;
+   font-size:small;
 }
 
-#menu ul li a:hover {
-  color: rgb(79, 149, 214);
+.mobile-menu{
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background-color: rgb(0, 81, 255);
+  margin: 8px;
+}
+
+
+.button{
+  border: none;
+  background-color: rgb(0, 110, 255);
+  padding: 6px 15px;
+  border-radius: 5px;
 }
 
 /*HISTORIA*/
-
-
 
 .txth {
   color: rgb(247, 245, 245);
@@ -335,8 +379,8 @@ figure.imgtexto:hover {
   width: calc(900px + 20px);
   height: calc(420px + 20px);
   background: linear-gradient(45deg,
-      rgb(73, 73, 190), rgb(77, 77, 202), rgb(73, 73, 230), rgb(43, 43, 218), rgb(15, 15, 148), rgb(5, 5, 114),
-      rgb(5, 5, 114), rgb(36, 36, 233), rgb(64, 64, 218), rgb(73, 73, 230), rgb(77, 77, 202), rgb(73, 73, 190));
+  rgb(73, 73, 190), rgb(77, 77, 202), rgb(73, 73, 230), rgb(43, 43, 218), rgb(15, 15, 148), rgb(5, 5, 114),
+  rgb(5, 5, 114), rgb(36, 36, 233), rgb(64, 64, 218), rgb(73, 73, 230), rgb(77, 77, 202), rgb(73, 73, 190));
   z-index: -1;
   background-size: 300%;
   animation: AnimarBorda 7s linear alternate infinite;
@@ -345,7 +389,7 @@ figure.imgtexto:hover {
 }
 
 .caixavideos::after {
-  filter: blur(6px);
+  filter: blur(10px);
 }
 
 @keyframes AnimarBorda {
