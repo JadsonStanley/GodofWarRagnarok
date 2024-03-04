@@ -285,6 +285,10 @@ nav {
    display: flex;
 }
 
+.nav-link:hover{
+  color: rgb(6, 135, 255);
+}
+
 .nav-list li{
    letter-spacing: 3px;
    margin-left: 32px;
@@ -312,6 +316,10 @@ nav {
 }
 
 /*HISTORIA*/
+
+.hb{
+  background-color: rgba(0, 26, 65, 0.068);
+}
 
 .txth {
   color: rgb(247, 245, 245);
@@ -383,36 +391,6 @@ figure.imgtexto:hover {
   align-items: center;
 }
 
-.caixavideos::before,
-.caixavideos::after {
-  content: '';
-  position: absolute;
-  width: calc(900px + 20px);
-  height: calc(420px + 20px);
-  background: linear-gradient(45deg,
-  rgb(73, 73, 190), rgb(77, 77, 202), rgb(73, 73, 230), rgb(43, 43, 218), rgb(15, 15, 148), rgb(5, 5, 114),
-  rgb(5, 5, 114), rgb(36, 36, 233), rgb(64, 64, 218), rgb(73, 73, 230), rgb(77, 77, 202), rgb(73, 73, 190));
-  z-index: -1;
-  background-size: 300%;
-  animation: AnimarBorda 7s linear alternate infinite;
-  max-width: 100%;
-
-}
-
-.caixavideos::after {
-  filter: blur(10px);
-}
-
-@keyframes AnimarBorda {
-  0% {
-    background-position: 0;
-  }
-
-  100% {
-    background-position: 300%;
-  }
-}
-
 /*COMPRAR*/
 
 .organizarcomprar {
@@ -456,7 +434,7 @@ figure.imgtexto:hover {
   background-color: rgb(27, 69, 160);
   border-style: none;
   border-radius: 30px;
-  top: 60px;
+
 }
 
 .botaocomprar:hover {
